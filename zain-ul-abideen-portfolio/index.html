@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Zain Ul Abideen — Full Stack Software Engineer. MERN, CI/CD, VPS deployment. Builder of TaskBot (Slack) at Apsis Grid." />
+  <title>Zain Ul Abideen | Full Stack Engineer</title>
+  <script>
+    (function () {
+      var t = localStorage.getItem("portfolio-theme");
+      if (t) document.documentElement.setAttribute("data-theme", t);
+      else if (matchMedia("(prefers-color-scheme: light)").matches) document.documentElement.setAttribute("data-theme", "light");
+      else document.documentElement.setAttribute("data-theme", "dark");
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="logo" href="#hero">Z<span class="logo-accent">.</span>U<span class="logo-accent">.</span>A</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button type="button" class="theme-toggle" aria-label="Switch theme">
+        <span class="theme-toggle-icon" aria-hidden="true">☾</span>
+      </button>
+      <a class="btn btn-sm btn-outline header-cta" href="Zain Ul Abideen - Resume.pdf" download>Resume</a>
+    </div>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section id="hero" class="section hero">
+      <div class="hero-badge">
+        <span class="pulse"></span>
+        Open to opportunities
+      </div>
+      <h1 class="hero-title">
+        <span class="hero-line">Zain Ul Abideen</span>
+        <span class="hero-sub">Full Stack Software Engineer</span>
+      </h1>
+      <p class="hero-lead">
+        I build production-grade web products with the <strong>MERN stack</strong>, ship through
+        <strong>GitHub Actions</strong> to <strong>VPS</strong> environments, and use
+        <strong>AI-assisted development</strong> to move faster without sacrificing quality.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">View featured work</a>
+        <a class="btn btn-ghost" href="mailto:ulabideenz40@gmail.com">Hire me</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-card" data-tilt>
+          <span class="stat-value">3+</span>
+          <span class="stat-label">Years experience</span>
+        </div>
+        <div class="stat-card" data-tilt>
+          <span class="stat-value">MERN</span>
+          <span class="stat-label">Primary stack</span>
+        </div>
+        <div class="stat-card" data-tilt>
+          <span class="stat-value">Live</span>
+          <span class="stat-label">TaskBot on Slack</span>
+        </div>
+        <div class="stat-card" data-tilt>
+          <span class="stat-value">CI/CD</span>
+          <span class="stat-label">GitHub Actions</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-head">
+        <span class="section-tag">01 — About</span>
+        <h2>Engineer who ships, not just codes</h2>
+      </div>
+      <div class="about-grid">
+        <div class="glass-card about-copy">
+          <p>
+            Software Engineer and Full Stack Web Developer with <strong>3+ years</strong> of experience
+            building scalable applications using React, Node.js, Django, and REST APIs. I care about
+            responsive UI, secure auth, backend performance, and reliable releases.
+          </p>
+          <p>
+            At <strong>Egora</strong> I work on a MERN POS platform (ordering, payments, franchise ops).
+            Previously at <strong>Hecta Solutions</strong> I delivered IPTV middleware across admin and
+            client surfaces. I also run <strong>Apsis Grid</strong> and shipped
+            <a href="https://apsisgrid.com/" target="_blank" rel="noopener">TaskBot</a> — a live Slack app
+            for team task accountability.
+          </p>
+          <ul class="highlight-list">
+            <li>VPS hosting &amp; server deployment</li>
+            <li>GitHub Actions pipelines</li>
+            <li>Cursor AI, Codex &amp; ChatGPT in daily workflow</li>
+            <li>Agile delivery with Jira</li>
+          </ul>
+        </div>
+        <div class="glass-card about-visual">
+          <div class="orbit-scene" id="mini-orbit" aria-hidden="true"></div>
+          <p class="orbit-caption">Stack in motion — same discipline I bring to production systems.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="section-head">
+        <span class="section-tag">02 — Experience</span>
+        <h2>Where I have delivered impact</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item glass-card">
+          <div class="timeline-meta">
+            <time datetime="2024-07">Jul 2024 — Present</time>
+            <span class="timeline-loc">Lahore, PK</span>
+          </div>
+          <h3>Software Engineer — Web Developer (MERN)</h3>
+          <p class="company">Egora Pvt Ltd</p>
+          <ul>
+            <li>Core POS modules: orders, reservations, warehouse, franchise operations.</li>
+            <li>QR mobile ordering, dine-in/pickup cart logic, X-Stax payment integration.</li>
+            <li>Shopify-style store themes with live preview; reusable NPM component packages.</li>
+            <li>GitHub Actions CI/CD and releases to VPS-hosted production.</li>
+          </ul>
+          <div class="tag-row">
+            <span>React</span><span>Node.js</span><span>MongoDB</span><span>Payments</span>
+          </div>
+        </article>
+        <article class="timeline-item glass-card">
+          <div class="timeline-meta">
+            <time datetime="2023-02">Feb 2023 — Jun 2024</time>
+            <span class="timeline-loc">Islamabad, PK</span>
+          </div>
+          <h3>Associate Software Engineer — Web Developer</h3>
+          <p class="company">Hecta Solutions Pvt Ltd</p>
+          <ul>
+            <li>IPTV middleware: Admin UI, Client UI, and Portal (Django, React, MySQL).</li>
+            <li>i18n, dependency upgrades, and performance improvements at scale.</li>
+            <li>Deployment, testing, and release cycles aligned with product goals.</li>
+            <li>Jira-driven bug fixing and reliability improvements.</li>
+          </ul>
+          <div class="tag-row">
+            <span>Django</span><span>React</span><span>MySQL</span><span>IPTV</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-head">
+        <span class="section-tag">03 — Skills</span>
+        <h2>Technical toolkit</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group glass-card">
+          <h3>Frontend</h3>
+          <div class="chips">
+            <span>React.js</span><span>Next.js</span><span>Redux</span><span>React Router</span>
+            <span>Material UI</span><span>Bulma CSS</span><span>TypeScript</span>
+          </div>
+        </div>
+        <div class="skill-group glass-card">
+          <h3>Backend</h3>
+          <div class="chips">
+            <span>Node.js</span><span>Express.js</span><span>Django</span>
+            <span>REST APIs</span><span>JWT</span><span>Slack API</span>
+          </div>
+        </div>
+        <div class="skill-group glass-card">
+          <h3>Data &amp; DevOps</h3>
+          <div class="chips">
+            <span>MongoDB</span><span>MySQL</span><span>VPS</span>
+            <span>GitHub Actions</span><span>Server deployment</span><span>Git</span>
+          </div>
+        </div>
+        <div class="skill-group glass-card">
+          <h3>AI &amp; workflow</h3>
+          <div class="chips">
+            <span>Cursor AI</span><span>OpenAI Codex</span><span>ChatGPT</span>
+            <span>Jira</span><span>Agile Scrum</span><span>NPM packages</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-head">
+        <span class="section-tag">04 — Projects</span>
+        <h2>Featured product</h2>
+      </div>
+      <article class="project-feature glass-card">
+        <div class="project-glow" aria-hidden="true"></div>
+        <div class="project-content">
+          <div class="project-badge">Live product</div>
+          <h3>TaskBot</h3>
+          <p class="project-sub">Slack task accountability · Apsis Grid</p>
+          <p>
+            TaskBot turns Slack into the place where work gets assigned, tracked, and completed —
+            broadcast tasks to the right people, see who is done, and send automatic deadline
+            reminders without another dashboard.
+          </p>
+          <ul class="project-points">
+            <li>Built with <strong>Node.js</strong> and the <strong>Slack API</strong></li>
+            <li>Deployed on <strong>VPS</strong> with <strong>GitHub Actions</strong> CI/CD</li>
+            <li>Focused on clarity, reliability, and security at scale</li>
+          </ul>
+          <div class="project-actions">
+            <a class="btn btn-primary" href="case-studies/taskbot.html">Read case study</a>
+            <a class="btn btn-ghost" href="https://apsisgrid.com/" target="_blank" rel="noopener">Visit Apsis Grid ↗</a>
+            <a class="btn btn-ghost" href="https://github.com/ZA535" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <div class="project-3d" id="project-cube" aria-hidden="true"></div>
+      </article>
+
+      <div class="project-grid">
+        <article class="glass-card project-card">
+          <h4>Egora POS Platform</h4>
+          <p>Enterprise MERN POS: QR ordering, payments, multi-store themes, franchise tooling.</p>
+        </article>
+        <article class="glass-card project-card">
+          <h4>IPTV Middleware Suite</h4>
+          <p>End-to-end IPTV admin, client, and portal experiences with Django and React.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="education" class="section section-compact">
+      <div class="section-head">
+        <span class="section-tag">05 — Education</span>
+        <h2>Academic foundation</h2>
+      </div>
+      <div class="glass-card edu-card">
+        <h3>Bachelor of Science in Computer Science</h3>
+        <p>University of Agriculture, Faisalabad, Pakistan · 2019 — 2023</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="section-head">
+        <span class="section-tag">06 — Contact</span>
+        <h2>Let&apos;s build something reliable</h2>
+      </div>
+      <div class="contact-grid">
+        <a class="contact-card glass-card" href="mailto:ulabideenz40@gmail.com">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">ulabideenz40@gmail.com</span>
+        </a>
+        <a class="contact-card glass-card" href="tel:+923090281069">
+          <span class="contact-label">Phone</span>
+          <span class="contact-value">+92 309 0281069</span>
+        </a>
+        <a class="contact-card glass-card" href="https://www.linkedin.com/in/zain69" target="_blank" rel="noopener">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">linkedin.com/in/zain69</span>
+        </a>
+        <a class="contact-card glass-card" href="https://github.com/ZA535" target="_blank" rel="noopener">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">github.com/ZA535</span>
+        </a>
+      </div>
+      <a class="btn btn-primary btn-wide" href="Zain Ul Abideen - Resume.pdf" download>Download resume (PDF)</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Zain Ul Abideen · Built with Three.js</p>
+  </footer>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.170.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.170.0/examples/jsm/"
+    }
+  }
+  </script>
+  <script type="module" src="js/theme.js"></script>
+  <script type="module" src="js/scene3d.js"></script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

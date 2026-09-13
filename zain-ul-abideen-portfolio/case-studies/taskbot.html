@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TaskBot case study — Slack task accountability app by Zain Ul Abideen (Apsis Grid). Node.js, Slack API, VPS, GitHub Actions." />
+  <title>TaskBot Case Study | Zain Ul Abideen</title>
+  <script>
+    (function () {
+      var t = localStorage.getItem("portfolio-theme");
+      if (t) document.documentElement.setAttribute("data-theme", t);
+      else if (matchMedia("(prefers-color-scheme: light)").matches) document.documentElement.setAttribute("data-theme", "light");
+      else document.documentElement.setAttribute("data-theme", "dark");
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body class="page-case-study">
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="logo" href="../index.html">Z<span class="logo-accent">.</span>U<span class="logo-accent">.</span>A</a>
+    <nav class="nav" aria-label="Case study">
+      <a href="#overview">Overview</a>
+      <a href="#problem">Problem</a>
+      <a href="#solution">Solution</a>
+      <a href="#stack">Stack</a>
+      <a href="#results">Results</a>
+    </nav>
+    <div class="header-actions">
+      <button type="button" class="theme-toggle" aria-label="Switch theme">
+        <span class="theme-toggle-icon" aria-hidden="true">☾</span>
+      </button>
+      <a class="btn btn-sm btn-outline header-cta" href="../index.html#projects">← Portfolio</a>
+    </div>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section id="overview" class="section case-hero">
+      <div class="case-hero-badge">Case study · Live product</div>
+      <h1 class="case-title">TaskBot</h1>
+      <p class="case-lead">
+        A Slack-native task accountability app built under <strong>Apsis Grid</strong> — assign work where teams already communicate, track completion in real time, and automate reminders without adding another dashboard.
+      </p>
+      <div class="case-meta-row">
+        <span>Role: Founder &amp; Full Stack Engineer</span>
+        <span>Platform: Slack</span>
+        <span>Status: Production (LIVE)</span>
+      </div>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://apsisgrid.com/" target="_blank" rel="noopener">Visit Apsis Grid ↗</a>
+        <a class="btn btn-ghost" href="../index.html#contact">Work with me</a>
+      </div>
+    </section>
+
+    <section id="problem" class="section section-compact-top">
+      <div class="section-head">
+        <span class="section-tag">01 — Problem</span>
+        <h2>Tasks get lost in chat</h2>
+      </div>
+      <div class="glass-card case-block">
+        <p>
+          Teams run on Slack, but assignments often disappear in threads. Managers chase status updates manually, and separate task tools create context switching. The goal was calmer operations: one clear view of what moves next, inside the workspace people already use daily.
+        </p>
+      </div>
+    </section>
+
+    <section id="solution" class="section section-compact-top">
+      <div class="section-head">
+        <span class="section-tag">02 — Solution</span>
+        <h2>From assignment to done — inside Slack</h2>
+      </div>
+      <div class="case-grid-3">
+        <article class="glass-card case-card">
+          <h3>Broadcast with intent</h3>
+          <p>Assign a clear task to everyone or a selected group in a few focused steps — no noisy broadcasts.</p>
+        </article>
+        <article class="glass-card case-card">
+          <h3>See real progress</h3>
+          <p>Understand who is done and where attention is needed without chasing teammates for updates.</p>
+        </article>
+        <article class="glass-card case-card">
+          <h3>Nudge at the right time</h3>
+          <p>Automatic deadline reminders keep work moving without manual follow-up.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-compact-top">
+      <div class="section-head">
+        <span class="section-tag">03 — Product principles</span>
+        <h2>How TaskBot is designed</h2>
+      </div>
+      <ul class="case-principles glass-card">
+        <li><strong>Clear by default</strong> — Every workflow earns its place; no feature clutter.</li>
+        <li><strong>Human at heart</strong> — Familiar Slack patterns and immediate value on day one.</li>
+        <li><strong>Built to endure</strong> — Security and reliability treated as infrastructure, not extras.</li>
+      </ul>
+    </section>
+
+    <section id="stack" class="section section-compact-top">
+      <div class="section-head">
+        <span class="section-tag">04 — Technical stack</span>
+        <h2>Architecture &amp; delivery</h2>
+      </div>
+      <div class="case-stack-grid">
+        <div class="glass-card case-block">
+          <h3>Application</h3>
+          <div class="chips">
+            <span>Node.js</span><span>Slack API</span><span>REST</span><span>Event subscriptions</span>
+          </div>
+          <p class="case-block-note">
+            Backend services handle Slack events, task state, broadcasts, completion tracking, and scheduled reminder jobs.
+          </p>
+        </div>
+        <div class="glass-card case-block">
+          <h3>Marketing site</h3>
+          <div class="chips">
+            <span>Next.js</span><span>React</span><span>Modern static delivery</span>
+          </div>
+          <p class="case-block-note">
+            Public product story and onboarding live on <a href="https://apsisgrid.com/" target="_blank" rel="noopener">apsisgrid.com</a>, aligned with the Apsis Grid brand.
+          </p>
+        </div>
+        <div class="glass-card case-block">
+          <h3>DevOps</h3>
+          <div class="chips">
+            <span>VPS hosting</span><span>GitHub Actions</span><span>CI/CD</span><span>Production monitoring</span>
+          </div>
+          <p class="case-block-note">
+            Automated pipelines build and deploy to VPS environments for predictable, repeatable releases.
+          </p>
+        </div>
+      </div>
+      <div class="glass-card case-flow">
+        <h3>High-level flow</h3>
+        <ol class="case-flow-list">
+          <li>Manager creates a task broadcast in Slack (team or subset).</li>
+          <li>TaskBot delivers interactive messages; teammates mark completion in-channel.</li>
+          <li>Progress aggregates for visibility; reminders fire before deadlines.</li>
+          <li>Deployments ship via GitHub Actions to VPS with rollback-friendly process.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="results" class="section section-compact-top">
+      <div class="section-head">
+        <span class="section-tag">05 — Outcomes</span>
+        <h2>What this demonstrates</h2>
+      </div>
+      <div class="case-results">
+        <div class="stat-card">
+          <span class="stat-value">Live</span>
+          <span class="stat-label">Production Slack app</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">0</span>
+          <span class="stat-label">Extra dashboards required</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">CI/CD</span>
+          <span class="stat-label">GitHub Actions → VPS</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">Full</span>
+          <span class="stat-label">Product ownership</span>
+        </div>
+      </div>
+      <div class="glass-card case-block case-cta">
+        <p>
+          TaskBot is the flagship product of <strong>Apsis Grid</strong> — an independent studio building purposeful tools for modern teams. It showcases end-to-end delivery: product thinking, Slack integrations, backend reliability, and automated deployment.
+        </p>
+        <div class="project-actions">
+          <a class="btn btn-primary" href="https://apsisgrid.com/" target="_blank" rel="noopener">Explore TaskBot ↗</a>
+          <a class="btn btn-ghost" href="../Zain Ul Abideen - Resume.pdf" download>Download resume</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Zain Ul Abideen · <a href="../index.html">Back to portfolio</a></p>
+  </footer>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.170.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.170.0/examples/jsm/"
+    }
+  }
+  </script>
+  <script type="module" src="../js/theme.js"></script>
+  <script type="module" src="../js/scene3d.js"></script>
+  <script type="module" src="../js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "zain-ul-abideen-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "3D portfolio site for Zain Ul Abideen — static deploy on Vercel",
+  "scripts": {
+    "dev": "python3 -m http.server 8080",
+    "start": "python3 -m http.server 8080"
+  }
+}
